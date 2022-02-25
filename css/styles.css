@@ -4,6 +4,10 @@
 :root{
     --header-bg-color: #38AF90;
     --white-font-color: #fff;
+    --main-title-color: #797979;
+    --main-section-content: #F0F0F0;
+    --main-content-title: #38AF90;
+    --pink-color: #DD7E92;
 }
 
 *{
@@ -17,6 +21,13 @@ a, a:hover{
     text-decoration: none;
     color: unset;
 }
+
+hr{
+    border: 1px solid var(--main-content-title);
+    margin-bottom: 3px;
+}
+
+/*HEADER*/
 
 .header-container{
     background-color: var(--header-bg-color);
@@ -35,12 +46,6 @@ a, a:hover{
     align-items: center;
 }
 
-.header-nav{
-    display: flex;
-    align-items: center;
-    display: none;
-}
-
 .header-title{
     font-weight: bold;
     font-size: 18px;
@@ -48,6 +53,7 @@ a, a:hover{
 
 .header-nav ul{
     list-style-type: none;
+    display: none;
 }
 
 .header-nav li{
@@ -66,6 +72,62 @@ a, a:hover{
 
 }
 
+/*MAIN*/
+
+.main-section-container{
+    margin: 40px 0;
+    margin: 10px;
+}
+
+.main-section-title{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-title-color);
+    text-align: center;
+}
+
+.main-section-content{
+    background-color: var(--main-section-content);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.main-content-title h3{
+    font-size: 1em;
+    color: var(--main-content-title);
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.main-content-title h4{
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--main-title-color);
+    margin-bottom: 5px;
+}
+
+.main-content-date{
+    font-size: 10px;
+    color: var(--main-content-title);
+}
+
+.main-content-text{
+    font-size: 10px;
+    color: var(--main-title-color);
+}
+
+.main-content-link{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--pink-color);
+}
+
+
+
+
+/*FOOTER*/
 
 
 @media screen and (min-width: 768px) {
@@ -74,6 +136,15 @@ a, a:hover{
         width: 100%;
         max-width: 990px;
         margin: 0 auto;
+    }
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-nav ul{
+        display: flex;
     }
     
 }
