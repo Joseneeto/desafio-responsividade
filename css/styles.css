@@ -75,12 +75,12 @@ hr{
 /*MAIN*/
 
 .main-section-container{
-    margin: 40px 0;
     margin: 10px;
+    margin-bottom: 40px;
 }
 
 .main-section-title{
-    margin-bottom: 10px;
+    margin: 40px 0 10px 0;
     font-size: 24px;
     font-weight: bold;
     color: var(--main-title-color);
@@ -123,6 +123,50 @@ hr{
     font-weight: bold;
     color: var(--pink-color);
 }
+
+.btn-fill{
+    background-color: var(--pink-color);
+    width: 244px;
+    height: 65px;
+    border-radius: 10px;
+    margin: auto;
+    color: var(--white-font-color);
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-game{
+    background-color: var(--main-section-content);
+    margin: 10px;
+    padding-bottom: 40px;
+    width: 0 auto;
+}
+.section-game-title{
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+
+.card-game-container{
+    background-color: var(--white-font-color);
+    width: 100%;
+    min-width: 300px;
+    height: 326px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.game-card-picture img{
+    width: 100%;
+    height: 165px;
+}
+
+/*FORM*/
 
 
 
