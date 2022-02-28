@@ -25,8 +25,8 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="main-section-container">
+  <main class="">
+    <section class="main-section-container container">
       <h2 id="news" class="main-section-title">Últimas notícias</h2>
 
       <div class="main-section-content box-shadow">
@@ -111,81 +111,83 @@
     <section class="main-section-container section-game">
       <h2 id="game" class="section-game-title">Jogos</h2>
 
-      <div>
+      <div class="cards-container container">
         <div class="card-game-container">
           <div  class="game-card-picture">
               <img src="img/game.png" alt="Horizon Forbidden West">
           </div>
-          <div>
+          <div class="game-card-text">
               <h3>Horizon Forbidden West</h3>
-              <p>De Sony Interactive Entertainment</p>
+              <p><span>De</span> Sony Interactive Entertainment</p>
           </div>
-          <div> 9.7</div>
+          <div class="game-card-score"> 9.7</div>
         </div>
 
         <div class="card-game-container">
           <div class="game-card-picture">
               <img src="img/game.png" alt="Horizon Forbidden West">
           </div>
-          <div>
+          <div class="game-card-text">
               <h3>Horizon Forbidden West</h3>
-              <p>De Sony Interactive Entertainment</p>
+              <p><span>De</span> Sony Interactive Entertainment</p>
           </div>
-          <div> 9.7</div>
+          <div class="game-card-score"> 9.7</div>
         </div>
 
         <div class="card-game-container">
           <div class="game-card-picture">
               <img src="img/game.png" alt="Horizon Forbidden West">
           </div>
-          <div>
+          <div class="game-card-text">
               <h3>Horizon Forbidden West</h3>
-              <p>De Sony Interactive Entertainment</p>
+              <p><span>De</span> Sony Interactive Entertainment</p>
           </div>
-          <div> 9.7</div>
+          <div class="game-card-score"> 9.7</div>
         </div>
 
       </div>
     </section>
 
-    <section class="main-section-container">
-      <h2 id="subscribe">Faça sua inscrição</h2>
+    <section class="main-section-container section-form">
+      <h2 id="subscribe" class="form-subscribe">Faça sua inscrição</h2>
 
-      <form action="obrigado.html">
-
-          <div>
+      <form action="obrigado.html" class="form-container">
+        <div class="form-elements">
+          <div class="input-name">
               <input id="ctrl-name" type="text" name="name" placeholder="Nome completo">
           </div>
-          <div>
+          <div class="input-email">
               <input id="ctrl-email" type="email" name="email" placeholder="Email">
           </div>
 
-          <div>
-              <label for="game-platform">Qual sua plataforma preferida?</label>
-              <div id="game-platform">
+          <div class="section-game-platforms">
+              <label class="game-platform-label" for="game-platform">Qual sua plataforma preferida?</label>
+              <div id="game-platform" class="games-platform">
                   <div>
-                      <input id="ctrl-platform-pc" type="radio" name="platform" >
-                      <label for="ctrl-platform-pc">PC</label>
+                      <input id="ctrl-platform-pc" class="platform-input" type="radio" name="platform" >
+                      <label for="ctrl-platform-pc" class="platform-label">PC</label>
                   </div>
                   <div>
-                      <input id="ctrl-platform-xbox" type="radio" name="platform" >
-                      <label for="ctrl-platform-xbox">Xbox</label>
+                      <input id="ctrl-platform-xbox" class="platform-input" type="radio" name="platform" >
+                      <label for="ctrl-platform-xbox" class="platform-label">Xbox</label>
                   </div>
                   <div>
-                      <input id="ctrl-platform-playstation" type="radio" name="platform" >
-                      <label for="ctrl-platform-playstation">Playstation</label>
+                      <input id="ctrl-platform-playstation" class="platform-input" type="radio" name="platform" >
+                      <label for="ctrl-platform-playstation" class="platform-label">Playstation</label>
                   </div>
               </div>
 
-              <div>
+              <div class="checkbox-section">
                   <input id="ctrl-mailing" type="checkbox" name="mailing">
                   <label for="ctrl-mailing">Desejo receber novidades por email.</label>
               </div>
 
-              <input type="submit" value="Enviar">
-              <input type="reset" value="limpar">
-          
+              <div class="btns">
+                <input class="btn-fill" type="submit" value="Enviar">
+                <input class="btn-empty" type="reset" value="Limpar">
+              </div>
           </div>
+        </div>
       </form>
 
     </section>

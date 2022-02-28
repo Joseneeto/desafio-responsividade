@@ -142,19 +142,29 @@ hr{
 
 .section-game{
     background-color: var(--main-section-content);
-    margin: 10px;
     padding-bottom: 40px;
-    width: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .section-game-title{
     text-align: center;
     padding: 40px 0 30px 0;
+    color: var(--main-content-title);
+    font-weight: bold;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .card-game-container{
     background-color: var(--white-font-color);
-    width: 100%;
-    min-width: 300px;
+    max-width: 300px;
     height: 326px;
     margin-bottom: 30px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -162,13 +172,134 @@ hr{
 }
 
 .game-card-picture img{
-    width: 100%;
+    width: 300px;
     height: 165px;
+}
+
+.game-card-text h3{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-title-color);
+    font-size: 18px;
+}
+
+.game-card-text p{
+    font-size: 14px;
+    color: var(--main-title-color);
+    text-align: center;
+}
+
+.game-card-text span{
+    font-weight: bold;
+    color: var(--main-content-title);
+}
+
+.game-card-score{
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--main-content-title);
 }
 
 /*FORM*/
 
+.form-subscribe{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--main-title-color);
+    margin-bottom: 15px;
+}
 
+.form-container{
+    background-color: var(--main-section-content);
+    border-radius: 10px;
+    max-width: 790px;
+    margin: auto;
+    font-size: 16px;
+    color: var(--main-title-color);
+    min-width: 300px;
+}
+
+.form-elements{
+    padding: 50px 10px;
+    margin: auto;
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-name input{
+    width: 280px;
+    height: 50px;
+    background-color: var(--white-font-color);
+    border: 1px solid var(--main-title-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-name input::placeholder{
+    color: #c4c4c4;
+    padding-left: 20px;
+}
+
+.input-email input{
+    width: 280px;
+    height: 50px;
+    background-color: var(--white-font-color);
+    border: 1px solid var(--main-title-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-email input::placeholder{
+    color: #c4c4c4;
+    padding-left: 20px;
+}
+
+.section-game-platforms label{
+   margin-bottom: 35px;
+}
+
+.game-platform-label{
+    font-size: 16px;
+}
+
+.games-platform{
+    margin: 10px 0 35px 0;
+}
+
+.checkbox-section{
+    margin-bottom: 35px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-empty{
+    background-color: var(--white-font-color);
+    border: 2px solid var(--pink-color);
+    border-radius: 10px;
+    width: 244px;
+    height: 65px;
+    margin-top: 20px;
+
+    margin-top: 20px;
+    color: var(--pink-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-empty [value]{
+  
+}
 
 
 /*FOOTER*/
@@ -189,6 +320,13 @@ hr{
 
     .header-nav ul{
         display: flex;
+    }
+
+    .cards-container{
+        min-width: 950px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     
 }
